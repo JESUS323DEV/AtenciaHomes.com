@@ -1,0 +1,770 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* esto asegura que el padding no se acumule al tamaño del elemento */
+}
+
+/* Body y HTML */
+body,
+html {
+    overflow-x: hidden;
+    /* evita el desplazamiento horizontal */
+    width: 100%;
+    /* asegura que el body no se desborde */
+    max-width: 100%;
+    /* evita que el contenido sea más grande que la pantalla */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*--------------------------Header-contenedor principal-logo+fondo-img--------------------*/
+
+
+.fondo-imagen {
+
+
+
+
+    background-image: url("../img/terraza2.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+
+}
+
+.contenedor-header {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    padding: 30px;
+
+
+
+
+
+}
+
+
+.logo {
+
+    max-width: 150px;
+    max-height: 150px;
+    position: absolute;
+    border-radius: 20px;
+    left: 20%;
+    border-radius: 20px;
+}
+
+/*--------------------------Header-img-de-Fondo+menu--------------------*/
+
+.contenedor-header nav ul {
+
+    display: flex;
+    gap: 50px;
+    list-style: none;
+
+
+
+}
+
+.contenedor-header nav ul li a {
+
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contenedor-header nav ul li a:hover {
+
+    color: black;
+    transform: scale(1.2);
+    /* Aumenta el tamaño un 20% */
+}
+
+/*------------------Texto-Header+fondo-img-----------------------------------*/
+
+.texto-header {
+
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    top: 40%;
+    left: 10%;
+    font-weight: bold;
+    max-width: 80%;
+    margin: auto;
+
+}
+
+.texto-header h3 {
+    color: rgb(216, 254, 65);
+    font-size: 40px;
+    text-align: left;
+
+}
+
+.texto-header h2 {
+    font-size: 60px;
+    line-height: 1.2;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/*----------------------------Link-Contacto-----------------*/
+
+.contacto {
+
+    margin-top: 5%;
+    margin-left: 9%;
+    border: 1px solid black;
+    background-color: rgb(216, 254, 65);
+    border-radius: 20px;
+
+    width: fit-content;
+
+    transform: translateX(-50%);
+    /* ajusta el desplazamiento para centrar */
+}
+
+
+.contacto a {
+
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+
+
+}
+
+.contacto a:hover {
+
+    transform: scale(1.1);
+
+}
+
+/*----------AJUSTES PARA QUE SE VEA MEJOR EN DISPOSITIVOS MÓVILES---------------*/
+
+/*------------------- Responsivo para pantallas pequeñas ------------------*/
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .fondo-imagen {
+
+        height: 800px;
+    }
+
+    .logo {
+        position: absolute;
+        border-radius: 20;
+
+        left: 10%;
+        top: 5%;
+        max-width: 120px;
+        /* Ajuste del tamaño del logo */
+
+    }
+
+    .texto-header {
+
+        margin-top: 80%;
+        width: 100%;
+
+
+
+
+    }
+
+    .texto-header h3 {
+
+        font-size: 20px;
+
+        margin-bottom: 5%;
+        line-height: 1.4;
+
+    }
+
+    .texto-header h2 {
+
+
+        margin-bottom: 15%;
+        text-align: left;
+        line-height: 1.2;
+    }
+
+    .contenedor-header nav ul {
+        flex-direction: column;
+        /* Coloca los links uno debajo del otro */
+        position: absolute;
+        left: 55%;
+        top: 10%;
+        gap: 10px;
+        text-align: right;
+    }
+
+    .contacto {
+        margin-top: 10%;
+        margin-left: 50%;
+
+
+    }
+
+    .contacto a {
+        font-size: 120%;
+        /* Ajusta el tamaño de los enlaces */
+
+    }
+
+    .contenedor-header p {
+
+        border: 1px solid;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .texto-header h2 {
+        font-size: 30px;
+        /* Reduce el tamaño del texto */
+    }
+
+    .contacto a {
+        font-size: 14px;
+        /* Ajuste del tamaño del texto */
+
+    }
+
+
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------AQUÍ EMPIEZA EL MAIN--------------------------------------------*/
+
+/*-----------PRIMERA PARTE DEL MAIN-----*/
+
+/*--Titulo SOBRE NOSOTROS--- */
+.cont-h1 {
+
+
+    text-align: left;
+    font-size: 350%;
+    margin-top: 5%;
+    margin-left: 8%;
+    font-weight: bold;
+    color: #fd9d43;
+    max-width: 80%;
+}
+
+/*--------------------------quienes somo-que hacemos--------------------------------------------------------------------*/
+
+/* Contenedor principal */
+.cont-principal {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+/* Contenedor de "Sobre Nosotros" */
+.sobre-nosotros {
+
+
+    display: block;
+    max-width: 40%;
+    margin: auto;
+}
+
+/* Sección "¿Quiénes somos?" */
+.sobre-nosotros>.quienes-somos {
+
+    padding: 5%;
+}
+
+.sobre-nosotros>.quienes-somos h3 {
+
+    font-size: 40px;
+    color: #ffa149;
+
+}
+
+.sobre-nosotros>.quienes-somos p {
+
+    font-size: 19px;
+    margin-top: 3%;
+    line-height: 1.6;
+    color: rgb(33, 33, 33);
+
+}
+
+/* Sección "¿Qué hacemos?" */
+.sobre-nosotros>.que-hacemos {
+
+    padding: 5%;
+}
+
+.sobre-nosotros>.que-hacemos h3 {
+
+    font-size: 40px;
+    color: #ffa149;
+
+
+}
+
+.sobre-nosotros>.que-hacemos p {
+
+    font-size: 19px;
+    margin-top: 3%;
+    line-height: 1.6;
+
+    color: rgb(33, 33, 33);
+}
+
+/* Imagen */
+.cont-img {
+    max-width: 800px;
+    max-height: 800px;
+    flex: 1;
+    margin-right: 5%;
+    padding: 2%;
+
+}
+
+
+/* Media Queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+
+    /* Contenedor principal */
+    .cont-principal {
+        flex-direction: column;
+        /* Coloca los elementos uno debajo del otro */
+        align-items: center;
+        /* Centra los elementos */
+    }
+
+    /* Contenedor de "Sobre Nosotros" */
+    .sobre-nosotros {
+        max-width: 90%;
+        /* Aumenta el ancho del contenedor en pantallas pequeñas */
+    }
+
+    /* Sección "¿Quiénes somos?" y "¿Qué hacemos?" */
+    .sobre-nosotros>.quienes-somos,
+    .sobre-nosotros>.que-hacemos {
+        padding: 3%;
+    }
+
+    .sobre-nosotros>.quienes-somos h3,
+    .sobre-nosotros>.que-hacemos h3 {
+        font-size: 30px;
+        /* Reduce el tamaño de los títulos */
+    }
+
+    .sobre-nosotros>.quienes-somos p,
+    .sobre-nosotros>.que-hacemos p {
+        font-size: 16px;
+        /* Reduce el tamaño del texto */
+    }
+
+    /* Imagen */
+    .cont-img {
+        max-width: 100%;
+        /* Asegura que la imagen no exceda el ancho del contenedor */
+        margin-right: 0;
+        padding: 0;
+    }
+}
+
+/* Media Queries para dispositivos más pequeños, como teléfonos móviles */
+@media screen and (max-width: 480px) {
+
+    /* Sección "¿Quiénes somos?" y "¿Qué hacemos?" */
+    .sobre-nosotros>.quienes-somos h3,
+    .sobre-nosotros>.que-hacemos h3 {
+        font-size: 30px;
+        /* Reduce aún más los tamaños en pantallas muy pequeñas */
+    }
+
+    .sobre-nosotros>.quienes-somos p,
+    .sobre-nosotros>.que-hacemos p {
+        font-size: 18px;
+    }
+
+    /* Imagen */
+    .cont-img {
+        max-width: 90%;
+        /* Ajusta el tamaño de la imagen al 100% del contenedor */
+        max-height: 400px;
+        /* Limita la altura en pantallas pequeñas */
+    }
+}
+
+
+/*--------------------------------------------AQUÍ TERMINA LA 1ERA PARTE DEL MAIN-¿QUIENES SOMOS?--------------------------------------------*/
+
+
+/*--------2DA PARTE DEL MAIN- ¿COMO FUNCIONA?----------------*/
+
+
+.cont2-h1 {
+
+
+    text-align: left;
+    font-size: 350%;
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    color: #fd9d43;
+    max-width: 80%;
+
+}
+
+/*--------------------------------------------------------------------*/
+.fondo2-imagen {
+
+    background-image: url("../img/imagen-color-amanecer.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+
+}
+
+.cont-como-funciona {
+
+    display: flex;
+
+
+}
+
+.cont-alquilamos {
+
+    padding: 30px;
+
+}
+
+.cont-alquilamos h2 {
+
+    font-size: 30px;
+    line-height: 1.6;
+
+}
+
+
+
+.cont-alquilamos p {
+    font-size: 20px;
+    line-height: 1.6;
+
+
+
+}
+
+
+/* MEDIA QUERY PARA DISPOSITIVOS PEQUEÑOS */
+@media (max-width: 768px) {
+    .fondo2-imagen {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .cont-como-funciona {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont-alquilamos h2 {
+        font-size: 24px;
+    }
+
+    .cont-alquilamos p {
+        font-size: 16px;
+    }
+}
+
+/*-----------AQUÍ TERMINA LA 2DA PARTA DEL MAIN --------------*/
+
+/*----AQUÍ EMPIEZA LA 3ERA PARTE DEL MAIN----*/
+
+/*3ERA PARTE MAIN---CONTACTO*/
+
+.h1-contacto {
+
+    text-align: left;
+    font-size: 350%;
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    color: #fd9d43;
+    max-width: 80%;
+
+
+}
+
+/*-----------------------------------------*/
+
+.h3-info {
+
+
+    text-align: left;
+    margin-left: 8%;
+    margin-bottom: 2%;
+    max-width: 80%;
+    font-size: 180%;
+    line-height: 1.6;
+
+    color:  #ffa149;
+
+}
+
+.p-contacto {
+
+
+    text-align: left;
+    margin-left: 8%;
+    max-width: 80%;
+    font-size: 130%;
+    margin-bottom: 2%;
+    line-height: 1.6;
+
+
+
+}
+
+/*-----------------------------------------*/
+
+.cont-contacto {
+
+
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    margin-left: 8%;
+    gap: 50px;
+    margin-bottom: 5%;
+}
+
+.cont-contacto h4 {
+
+    font-size: 180%;
+
+
+}
+
+
+.cont-contacto img {
+
+    width: 100px;
+    border-radius: 20px;
+
+}
+
+@media(max-width:768px) {
+
+    .cont-contacto {
+
+
+        padding: 0;
+        margin-top: 15%;
+    }
+
+    .cont-contacto img {
+
+        max-width: 100px;
+
+
+    }
+}
+
+/*--------------AQUÍ TERMINA LA 3ERA PARTA DEL MAIN--CONTACTO---------------------------*/
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-image: url("../img/imagen-color-amanecer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.cont-foot {
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont-izquierda img {
+
+    max-width: 100px;
+    margin-left: 20%;
+    border-radius: 20px;
+    margin-bottom: 5px;
+
+
+}
+
+.cont-izquierda,
+.cont-medio,
+.cont-derecha {
+    flex: 1;
+    padding: 20px;
+    margin-left: 10%;
+}
+
+
+.cont-izquierda h3,
+.cont-medio h4,
+.cont-derecha h4 {
+
+    color: black;
+    margin-bottom: 10px;
+
+
+
+}
+
+.cont-medio ul {
+
+    list-style-type: none;
+    padding: 0;
+}
+
+.cont-medio ul li {
+
+    margin-bottom: 10px;
+}
+
+
+.cont-medio ul li a {
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.cont-derecha p {
+
+    color: rgb(46, 46, 46);
+    margin-bottom: 10px;
+    
+}
+
+/*------------------------------------*/
+
+.cont-abajo {
+
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+
+.e-mail {
+
+    color: white;
+}
+
+.fono {
+
+    color: white;
+}
+
+
+/*------------------- Estilos Responsivos para Móviles ------------------*/
+
+/* Móviles (pantallas pequeñas) */
+@media (max-width: 768px) {
+    .cont-foot {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+        
+
+
+    footer {
+
+        margin-top: 100px;
+    }
+
+    .cont-izquierda img {
+
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+
+
+    .cont-izquierda,
+    .cont-medio,
+    .cont-derecha {
+        margin-left: 0;
+        /* Elimina el margen izquierdo */
+        width: 100%;
+        /* Hace que cada columna ocupe el 100% del ancho */
+        padding: 10px 20px;
+        /* Ajusta el padding para pantallas pequeñas */
+        text-align: center;
+        /* Centra el texto en cada columna */
+    }
+
+    .cont-izquierda h3,
+
+    .cont-medio h4,
+    .cont-derecha h4 {
+        color: rgb(0, 0, 0);
+        /* Cambia el color de los encabezados a blanco */
+    }
+
+    .cont-medio ul li a {
+        color: rgb(255, 253, 253);
+        /* Cambia el color de los enlaces a blanco */
+    }
+
+    .cont-abajo {
+        font-size: 12px;
+        /* Reduce el tamaño de la fuente en móviles */
+        margin-top: 10px;
+        /* Reduce el margen superior */
+    }
+}
