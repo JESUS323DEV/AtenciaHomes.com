@@ -23,9 +23,6 @@ html {
 
 .fondo-imagen {
 
-
-
-
     background-image: url("../img/terraza2.png");
     background-size: cover;
     background-position: center;
@@ -50,10 +47,6 @@ html {
     left: 0;
     padding: 30px;
 
-
-
-
-
 }
 
 
@@ -74,8 +67,6 @@ html {
     display: flex;
     gap: 50px;
     list-style: none;
-
-
 
 }
 
@@ -102,13 +93,11 @@ html {
 
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
     top: 40%;
     left: 10%;
     font-weight: bold;
     max-width: 80%;
     margin: auto;
-
 }
 
 .texto-header h3 {
@@ -127,8 +116,6 @@ html {
     margin-bottom: 20px;
 }
 
-
-
 /*----------------------------Link-Contacto-----------------*/
 
 .contacto {
@@ -138,13 +125,10 @@ html {
     border: 1px solid black;
     background-color: rgb(216, 254, 65);
     border-radius: 20px;
-
     width: fit-content;
-
     transform: translateX(-50%);
     /* ajusta el desplazamiento para centrar */
 }
-
 
 .contacto a {
 
@@ -155,8 +139,6 @@ html {
     font-weight: bold;
     transition: transform 0.3s ease-in-out;
     padding: 20px;
-
-
 }
 
 .contacto a:hover {
@@ -177,12 +159,12 @@ html {
 
     .logo {
         position: absolute;
-        border-radius: 20;
-
+        border-radius: 20px;
         left: 10%;
         top: 5%;
         max-width: 120px;
         /* Ajuste del tamaño del logo */
+
 
     }
 
@@ -191,23 +173,16 @@ html {
         margin-top: 80%;
         width: 100%;
 
-
-
-
     }
 
     .texto-header h3 {
 
         font-size: 20px;
-
         margin-bottom: 5%;
         line-height: 1.4;
-
     }
 
     .texto-header h2 {
-
-
         margin-bottom: 15%;
         text-align: left;
         line-height: 1.2;
@@ -226,8 +201,6 @@ html {
     .contacto {
         margin-top: 10%;
         margin-left: 50%;
-
-
     }
 
     .contacto a {
@@ -241,7 +214,6 @@ html {
         border: 1px solid;
     }
 
-
 }
 
 @media (max-width: 480px) {
@@ -253,10 +225,7 @@ html {
     .contacto a {
         font-size: 14px;
         /* Ajuste del tamaño del texto */
-
     }
-
-
 }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -318,7 +287,7 @@ html {
 
 .sobre-nosotros>.quienes-somos p {
 
-    font-size: 19px;
+    font-size: 25px;
     margin-top: 3%;
     line-height: 1.6;
     color: rgb(33, 33, 33);
@@ -341,7 +310,7 @@ html {
 
 .sobre-nosotros>.que-hacemos p {
 
-    font-size: 19px;
+    font-size: 25px;
     margin-top: 3%;
     line-height: 1.6;
 
@@ -465,32 +434,19 @@ html {
 .cont-como-funciona {
 
     display: flex;
-
-
 }
 
-.cont-alquilamos {
-
-    padding: 30px;
-
-}
-
+.cont-alquilamos,
 .cont-alquilamos h2 {
-
-    font-size: 30px;
-    line-height: 1.6;
-
+    padding: 25px;
+    font-size: 135%;
+    
 }
-
-
-
-.cont-alquilamos p {
+.cont-alquilamos,.cont-alquilamos p {
     font-size: 20px;
-    line-height: 1.6;
-
-
 
 }
+
 
 
 /* MEDIA QUERY PARA DISPOSITIVOS PEQUEÑOS */
@@ -511,6 +467,20 @@ html {
 
     .cont-alquilamos p {
         font-size: 16px;
+
+    }
+
+    .cont2-h1 {
+
+        margin-bottom: 15%;
+        font-size: 45px;
+
+        padding: 3px;
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 10%;
+
+
     }
 }
 
@@ -536,31 +506,16 @@ html {
 
 /*-----------------------------------------*/
 
-.h3-info {
-
-
-    text-align: left;
-    margin-left: 8%;
-    margin-bottom: 2%;
-    max-width: 80%;
-    font-size: 180%;
-    line-height: 1.6;
-
-    color:  #ffa149;
-
-}
-
+.h3-info,
 .p-contacto {
 
 
     text-align: left;
     margin-left: 8%;
+
     max-width: 80%;
-    font-size: 130%;
-    margin-bottom: 2%;
+    font-size: 160%;
     line-height: 1.6;
-
-
 
 }
 
@@ -571,17 +526,17 @@ html {
 
     display: flex;
     align-items: center;
+    justify-content: center;
     max-width: 80%;
     margin-left: 8%;
-    gap: 50px;
     margin-bottom: 5%;
+    margin-top: 5%;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .cont-contacto h4 {
-
-    font-size: 180%;
-
-
+    font-size: 400%;
 }
 
 
@@ -589,17 +544,57 @@ html {
 
     width: 100px;
     border-radius: 20px;
+}
+
+
+/*-------------barra hr-------------------------*/
+
+
+hr {
+
+    max-width: 60%;
+    margin: auto;
+    margin: 50px auto;
+    opacity: 0.6;
 
 }
+
+/*-----------------------------------------------------------*/
 
 @media(max-width:768px) {
 
     .cont-contacto {
-
-
         padding: 0;
         margin-top: 15%;
     }
+
+    .h1-contacto {
+
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    .h3-info {
+
+
+        font-size: 29px;
+        line-height: 1.0;
+    }
+
+    .p-contacto {
+
+        margin-top: 30px;
+        line-height: 1.3;
+    }
+
+
+
+    .cont-contacto h4 {
+        font-size: 280%;
+        text-align: center;
+    }
+
+
 
     .cont-contacto img {
 
@@ -609,8 +604,88 @@ html {
     }
 }
 
-/*--------------AQUÍ TERMINA LA 3ERA PARTA DEL MAIN--CONTACTO---------------------------*/
+/*--------------AQUÍ TERMINA LA 3ERA PARTA DEL MAIN--CONTACTO--FIN DEL MAIN-------------------------*/
 
+
+/*-----------------------------------GALERÍA DE IMÁGENES---------------------------------*/
+
+
+.cont-galeria {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+
+.cont-galeria img {
+
+    max-width: 450px;
+    max-height: 400px;
+    transition: transform 0.3s ease;
+}
+
+
+/*---------------------------------------------------*/
+
+.h1-galeria {
+
+    text-align: left;
+    font-size: 350%;
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    color: #fd9d43;
+    max-width: 80%;
+}
+
+.h3-galeria,
+.p-galeria {
+
+    text-align: left;
+    margin-left: 8%;
+    max-width: 80%;
+    font-size: 130%;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.i-galeria {
+
+
+    text-align: left;
+    margin-left: 8%;
+    max-width: 80%;
+    font-size: 115%;
+    margin-bottom: 2%;
+    line-height: 1.6;
+    font-weight: lighter;
+}
+
+.a-galeria {
+
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+
+}
+
+/*--------------------------------------*/
+@media (max-width: 768px) {
+
+    .cont-galeria img {
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/*----------------AQUÍ EMPIEZA EL FOOTER------------*/
 
 footer {
     background-color: #333;
@@ -685,7 +760,7 @@ footer {
 
     color: rgb(46, 46, 46);
     margin-bottom: 10px;
-    
+
 }
 
 /*------------------------------------*/
@@ -715,12 +790,12 @@ footer {
 /* Móviles (pantallas pequeñas) */
 @media (max-width: 768px) {
     .cont-foot {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
-        
+
 
 
     footer {
@@ -766,5 +841,34 @@ footer {
         /* Reduce el tamaño de la fuente en móviles */
         margin-top: 10px;
         /* Reduce el margen superior */
+    }
+}
+
+/*---------------------------*/
+
+.flecha-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+
+@media (max-width: 600px) {
+    .flecha-arriba {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 14px;
+        font-size: 18px;
+        border-radius: 10%;
     }
 }
