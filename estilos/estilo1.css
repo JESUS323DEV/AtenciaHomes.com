@@ -428,6 +428,7 @@ html {
     justify-content: space-between;
     text-align: center;
     width: 100%;
+    margin-bottom: 4%;
 
 }
 
@@ -526,29 +527,23 @@ html {
 
     display: flex;
     align-items: center;
-    justify-content: center;
-    max-width: 80%;
     margin-left: 8%;
+    max-width: 80%;
     margin-bottom: 5%;
     margin-top: 5%;
     gap: 50px;
     flex-wrap: wrap;
 }
-
 .cont-contacto h4 {
-    font-size: 400%;
-}
-
-
+    font-size: 300%;
+}    
 .cont-contacto img {
 
-    width: 100px;
+    width: 70px;
     border-radius: 20px;
 }
 
-
 /*-------------barra hr-------------------------*/
-
 
 hr {
 
@@ -599,6 +594,8 @@ hr {
     .cont-contacto img {
 
         max-width: 100px;
+        margin-left: 110px;
+    
 
 
     }
@@ -613,18 +610,21 @@ hr {
 .cont-galeria {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 70px;
+    
     margin-bottom: 1%;
     flex-wrap: wrap;
     transition: transform 0.3s ease;
     padding: 20px;
+    
 }
 
 .cont-galeria img {
 
-    max-width: 450px;
-    max-height: 400px;
-    transition: transform 0.3s ease;
+    max-width: 500px;
+    max-height: 500px;
+   
 }
 
 
@@ -642,7 +642,7 @@ hr {
     max-width: 80%;
 }
 
-.h3-galeria,
+
 .p-galeria {
 
     text-align: left;
@@ -653,34 +653,27 @@ hr {
     margin-bottom: 20px;
 }
 
-.i-galeria {
 
-
-    text-align: left;
-    margin-left: 8%;
-    max-width: 80%;
-    font-size: 115%;
-    margin-bottom: 2%;
-    line-height: 1.6;
-    font-weight: lighter;
-}
-
-.a-galeria {
-
-    text-decoration: none;
-    color: rgb(46, 46, 46);
-    font-weight: bold;
-
-}
 
 /*--------------------------------------*/
 @media (max-width: 768px) {
+
+    .cont-galeria {
+
+        gap: 0;
+    }
 
     .cont-galeria img {
 
         width: 100%;
         margin-bottom: 20px;
     }
+
+    .p-galeria {
+
+        font-size: 120%;
+    }
+    
 
 }
 
