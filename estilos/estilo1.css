@@ -33,19 +33,16 @@ html {
     justify-content: space-between;
     text-align: center;
     width: 100%;
-
 }
 
 .contenedor-header {
 
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 5%;
-    left: 0;
-    padding: 30px;
+    padding: 2%;
 
 }
 
@@ -54,11 +51,12 @@ html {
 
     max-width: 150px;
     max-height: 150px;
-    position: absolute;
     border-radius: 20px;
-    left: 20%;
-    border-radius: 20px;
+    margin-right: 10%;
+
+
 }
+
 
 /*--------------------------Header-img-de-Fondo+menu--------------------*/
 
@@ -92,12 +90,12 @@ html {
 .texto-header {
 
     color: white;
+    flex-wrap: wrap;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    top: 40%;
-    left: 10%;
     font-weight: bold;
-    max-width: 80%;
-    margin: auto;
+    width: 100%;
+    padding: 6%;
+    
 }
 
 .texto-header h3 {
@@ -153,39 +151,43 @@ html {
 /* Media queries para pantallas pequeñas */
 @media (max-width: 768px) {
     .fondo-imagen {
+        height: 600px;
 
-        height: 800px;
     }
 
     .logo {
-        position: absolute;
+       
         border-radius: 20px;
-        left: 10%;
-        top: 5%;
         max-width: 120px;
+        margin-right: 50%;
+        margin-top: 4%;
+      
         /* Ajuste del tamaño del logo */
-
-
     }
+
+
 
     .texto-header {
-
-        margin-top: 80%;
         width: 100%;
+        margin-bottom: 8%;
 
     }
+
+       
+
 
     .texto-header h3 {
 
         font-size: 20px;
         margin-bottom: 5%;
-        line-height: 1.4;
+        line-height: 1.5;
+      
     }
 
     .texto-header h2 {
-        margin-bottom: 15%;
-        text-align: left;
-        line-height: 1.2;
+        
+       font-size: 150%;
+        
     }
 
     .contenedor-header nav ul {
@@ -193,7 +195,7 @@ html {
         /* Coloca los links uno debajo del otro */
         position: absolute;
         left: 55%;
-        top: 10%;
+        top: 4%;
         gap: 10px;
         text-align: right;
     }
@@ -216,17 +218,7 @@ html {
 
 }
 
-@media (max-width: 480px) {
-    .texto-header h2 {
-        font-size: 30px;
-        /* Reduce el tamaño del texto */
-    }
 
-    .contacto a {
-        font-size: 14px;
-        /* Ajuste del tamaño del texto */
-    }
-}
 
 /*-------------------------------------------------------------------------------------------*/
 
@@ -320,15 +312,13 @@ html {
 /* Imagen */
 .cont-img {
     max-width: 800px;
-    max-height: 800px;
     flex: 1;
     margin-right: 5%;
     padding: 2%;
-
 }
-
-
 /* Media Queries para dispositivos móviles */
+
+
 @media screen and (max-width: 768px) {
 
     /* Contenedor principal */
@@ -365,7 +355,8 @@ html {
 
     /* Imagen */
     .cont-img {
-        max-width: 100%;
+       
+        width:100%;
         /* Asegura que la imagen no exceda el ancho del contenedor */
         margin-right: 0;
         padding: 0;
@@ -389,10 +380,10 @@ html {
 
     /* Imagen */
     .cont-img {
-        max-width: 90%;
+        width: 90%;
         /* Ajusta el tamaño de la imagen al 100% del contenedor */
-        max-height: 400px;
-        /* Limita la altura en pantallas pequeñas */
+        
+        
     }
 }
 
@@ -441,9 +432,11 @@ html {
 .cont-alquilamos h2 {
     padding: 25px;
     font-size: 135%;
-    
+
 }
-.cont-alquilamos,.cont-alquilamos p {
+
+.cont-alquilamos,
+.cont-alquilamos p {
     font-size: 20px;
 
 }
@@ -467,7 +460,7 @@ html {
     }
 
     .cont-alquilamos p {
-        font-size: 16px;
+        font-size: 100%;
 
     }
 
@@ -534,9 +527,11 @@ html {
     gap: 50px;
     flex-wrap: wrap;
 }
+
 .cont-contacto h4 {
     font-size: 300%;
-}    
+}
+
 .cont-contacto img {
 
     width: 70px;
@@ -561,6 +556,8 @@ hr {
     .cont-contacto {
         padding: 0;
         margin-top: 15%;
+        text-align: center;
+        justify-content: center;
     }
 
     .h1-contacto {
@@ -580,6 +577,7 @@ hr {
 
         margin-top: 30px;
         line-height: 1.3;
+        
     }
 
 
@@ -593,13 +591,15 @@ hr {
 
     .cont-contacto img {
 
-        max-width: 100px;
-        margin-left: 110px;
-    
-
-
+        width: 100px;
+        
     }
 }
+
+
+
+
+
 
 /*--------------AQUÍ TERMINA LA 3ERA PARTA DEL MAIN--CONTACTO--FIN DEL MAIN-------------------------*/
 
@@ -612,19 +612,19 @@ hr {
     display: flex;
     justify-content: center;
     gap: 70px;
-    
+
     margin-bottom: 1%;
     flex-wrap: wrap;
     transition: transform 0.3s ease;
     padding: 20px;
-    
+
 }
 
 .cont-galeria img {
 
     max-width: 500px;
     max-height: 500px;
-   
+
 }
 
 
@@ -661,6 +661,7 @@ hr {
     .cont-galeria {
 
         gap: 0;
+        margin-top:10%;
     }
 
     .cont-galeria img {
@@ -672,8 +673,14 @@ hr {
     .p-galeria {
 
         font-size: 120%;
+        margin-top:10%;
     }
-    
+
+ .h1-galeria {
+
+    line-height: 1.0;
+ }
+
 
 }
 
@@ -789,7 +796,7 @@ footer {
         text-align: center;
     }
 
-
+ 
 
     footer {
 
@@ -798,8 +805,8 @@ footer {
 
     .cont-izquierda img {
 
-        margin-right: 50px;
-        margin-bottom: 20px;
+      margin: auto;
+      margin-bottom: 10%;
     }
 
 
