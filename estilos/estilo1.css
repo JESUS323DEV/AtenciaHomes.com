@@ -65,6 +65,8 @@ html {
     display: flex;
     gap: 50px;
     list-style: none;
+    margin-bottom: 20%;
+   
 
 }
 
@@ -76,6 +78,7 @@ html {
     font-size: 18px;
     font-weight: bold;
     transition: 0.3s;
+
 }
 
 .contenedor-header nav ul li a:hover {
@@ -149,10 +152,11 @@ html {
 
 /*------------------- Responsivo para pantallas pequeñas ------------------*/
 /* Media queries para pantallas pequeñas */
+
 @media (max-width: 768px) {
     .fondo-imagen {
-        height: 600px;
 
+        height: 600px;
     }
 
     .logo {
@@ -420,6 +424,7 @@ html {
     text-align: center;
     width: 100%;
     margin-bottom: 4%;
+    border: 1px solid;
 
 }
 
@@ -687,162 +692,88 @@ hr {
 
 /*----------------AQUÍ EMPIEZA EL FOOTER------------*/
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 30px;
-    font-family: Arial, sans-serif;
-    background-image: url("../img/imagen-color-amanecer.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
 
 .cont-foot {
-
-
+    
+    border: 1px solid ;
+    margin-top: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    background-image: url(../img/imagen-color-amanecer.png);
+    background-position: center;
+    background-size: cover;
     flex-wrap: wrap;
+    
+
+  
 }
-
-.cont-izquierda img {
-
+.cont-foot img {
     max-width: 100px;
-    margin-left: 20%;
+    height: 100px;
     border-radius: 20px;
-    margin-bottom: 5px;
+    padding: 10px;
+}
 
+.cont-foot p {
+
+    font-size: 120%;
+    font-weight: bold;
+    
 
 }
 
-.cont-izquierda,
-.cont-medio,
-.cont-derecha {
-    flex: 1;
-    padding: 20px;
-    margin-left: 10%;
-}
-
-
-.cont-izquierda h3,
-.cont-medio h4,
-.cont-derecha h4 {
-
-    color: black;
-    margin-bottom: 10px;
-
-
-
-}
-
-.cont-medio ul {
-
-    list-style-type: none;
-    padding: 0;
-}
-
-.cont-medio ul li {
-
-    margin-bottom: 10px;
-}
-
-
-.cont-medio ul li a {
+.cont-foot nav,a {
 
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(63, 63, 63);
+    font-weight: lighter;
+    font-size: 100%;
+    
 }
 
-.cont-derecha p {
-
-    color: rgb(46, 46, 46);
-    margin-bottom: 10px;
-
-}
-
-/*------------------------------------*/
-
-.cont-abajo {
+.cont-foot i {
 
     text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.6;
 }
 
 
-
-.e-mail {
-
-    color: white;
-}
-
-.fono {
-
-    color: white;
-}
-
-
-/*------------------- Estilos Responsivos para Móviles ------------------*/
-
-/* Móviles (pantallas pequeñas) */
 @media (max-width: 768px) {
+
     .cont-foot {
+
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
+        gap: 10px;
     }
 
- 
+    .cont-foot img {
 
-    footer {
-
-        margin-top: 100px;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
 
-    .cont-izquierda img {
+    .cont-foot p {
 
-      margin: auto;
-      margin-bottom: 10%;
+        font-size: 110%;
     }
 
-
-    .cont-izquierda,
-    .cont-medio,
-    .cont-derecha {
-        margin-left: 0;
-        /* Elimina el margen izquierdo */
-        width: 100%;
-        /* Hace que cada columna ocupe el 100% del ancho */
-        padding: 10px 20px;
-        /* Ajusta el padding para pantallas pequeñas */
-        text-align: center;
-        /* Centra el texto en cada columna */
-    }
-
-    .cont-izquierda h3,
-
-    .cont-medio h4,
-    .cont-derecha h4 {
-        color: rgb(0, 0, 0);
-        /* Cambia el color de los encabezados a blanco */
-    }
-
-    .cont-medio ul li a {
-        color: rgb(255, 253, 253);
-        /* Cambia el color de los enlaces a blanco */
-    }
-
-    .cont-abajo {
-        font-size: 12px;
-        /* Reduce el tamaño de la fuente en móviles */
-        margin-top: 10px;
-        /* Reduce el margen superior */
-    }
+   
 }
+
+
+
+    
+    
+   
+
+
+
+
+
+
 
 /*---------------------------*/
 
@@ -863,7 +794,7 @@ footer {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .flecha-arriba {
         bottom: 15px;
         right: 15px;
