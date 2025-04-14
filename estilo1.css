@@ -1,0 +1,805 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* esto asegura que el padding no se acumule al tamaño del elemento */
+}
+
+/* Body y HTML */
+body,
+html {
+    overflow-x: hidden;
+    /* evita el desplazamiento horizontal */
+    width: 100%;
+    /* asegura que el body no se desborde */
+    max-width: 100%;
+    /* evita que el contenido sea más grande que la pantalla */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*--------------------------Header-contenedor principal-logo+fondo-img--------------------*/
+
+
+.fondo-imagen {
+
+    background-image: url("../img/terraza2.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+
+.contenedor-header {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+
+}
+
+
+.logo {
+
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 20px;
+    margin-right: 10%;
+
+
+}
+
+
+/*--------------------------Header-img-de-Fondo+menu--------------------*/
+
+.contenedor-header nav ul {
+
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-bottom: 20%;
+   
+
+}
+
+.contenedor-header nav ul li a {
+
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.contenedor-header nav ul li a:hover {
+
+    color: black;
+    transform: scale(1.2);
+    /* Aumenta el tamaño un 20% */
+}
+
+/*------------------Texto-Header+fondo-img-----------------------------------*/
+
+.texto-header {
+
+    color: white;
+    flex-wrap: wrap;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    width: 100%;
+    padding: 6%;
+    
+}
+
+.texto-header h3 {
+    color: rgb(216, 254, 65);
+    font-size: 40px;
+    text-align: left;
+
+}
+
+.texto-header h2 {
+    font-size: 60px;
+    line-height: 1.2;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*----------------------------Link-Contacto-----------------*/
+
+.contacto {
+
+    margin-top: 5%;
+    margin-left: 9%;
+    border: 1px solid black;
+    background-color: rgb(216, 254, 65);
+    border-radius: 20px;
+    width: fit-content;
+    transform: translateX(-50%);
+    /* ajusta el desplazamiento para centrar */
+}
+
+.contacto a {
+
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.contacto a:hover {
+
+    transform: scale(1.1);
+
+}
+
+/*----------AJUSTES PARA QUE SE VEA MEJOR EN DISPOSITIVOS MÓVILES---------------*/
+
+/*------------------- Responsivo para pantallas pequeñas ------------------*/
+/* Media queries para pantallas pequeñas */
+
+@media (max-width: 768px) {
+    .fondo-imagen {
+
+        height: 600px;
+    }
+
+    .logo {
+       
+        border-radius: 20px;
+        max-width: 120px;
+        margin-right: 50%;
+        margin-top: 4%;
+      
+        /* Ajuste del tamaño del logo */
+    }
+
+
+
+    .texto-header {
+        width: 100%;
+        margin-bottom: 8%;
+
+    }
+
+       
+
+
+    .texto-header h3 {
+
+        font-size: 20px;
+        margin-bottom: 5%;
+        line-height: 1.5;
+      
+    }
+
+    .texto-header h2 {
+        
+       font-size: 150%;
+        
+    }
+
+    .contenedor-header nav ul {
+        flex-direction: column;
+        /* Coloca los links uno debajo del otro */
+        position: absolute;
+        left: 55%;
+        top: 4%;
+        gap: 10px;
+        text-align: right;
+    }
+
+    .contacto {
+        margin-top: 10%;
+        margin-left: 50%;
+    }
+
+    .contacto a {
+        font-size: 120%;
+        /* Ajusta el tamaño de los enlaces */
+
+    }
+
+    .contenedor-header p {
+
+        border: 1px solid;
+    }
+
+}
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------AQUÍ EMPIEZA EL MAIN--------------------------------------------*/
+
+/*-----------PRIMERA PARTE DEL MAIN-----*/
+
+/*--Titulo SOBRE NOSOTROS--- */
+.cont-h1 {
+
+
+    text-align: left;
+    font-size: 350%;
+    margin-top: 5%;
+    margin-left: 8%;
+    font-weight: bold;
+    color: #fd9d43;
+    max-width: 80%;
+}
+
+/*--------------------------quienes somo-que hacemos--------------------------------------------------------------------*/
+
+/* Contenedor principal */
+.cont-principal {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+/* Contenedor de "Sobre Nosotros" */
+.sobre-nosotros {
+
+
+    display: block;
+    max-width: 40%;
+    margin: auto;
+}
+
+/* Sección "¿Quiénes somos?" */
+.sobre-nosotros>.quienes-somos {
+
+    padding: 5%;
+}
+
+.sobre-nosotros>.quienes-somos h3 {
+
+    font-size: 40px;
+    color: #ffa149;
+
+}
+
+.sobre-nosotros>.quienes-somos p {
+
+    font-size: 25px;
+    margin-top: 3%;
+    line-height: 1.6;
+    color: rgb(33, 33, 33);
+
+}
+
+/* Sección "¿Qué hacemos?" */
+.sobre-nosotros>.que-hacemos {
+
+    padding: 5%;
+}
+
+.sobre-nosotros>.que-hacemos h3 {
+
+    font-size: 40px;
+    color: #ffa149;
+
+
+}
+
+.sobre-nosotros>.que-hacemos p {
+
+    font-size: 25px;
+    margin-top: 3%;
+    line-height: 1.6;
+
+    color: rgb(33, 33, 33);
+}
+
+/* Imagen */
+.cont-img {
+    max-width: 800px;
+    flex: 1;
+    margin-right: 5%;
+    padding: 2%;
+}
+/* Media Queries para dispositivos móviles */
+
+
+@media screen and (max-width: 768px) {
+
+    /* Contenedor principal */
+    .cont-principal {
+        flex-direction: column;
+        /* Coloca los elementos uno debajo del otro */
+        align-items: center;
+        /* Centra los elementos */
+    }
+
+    /* Contenedor de "Sobre Nosotros" */
+    .sobre-nosotros {
+        max-width: 90%;
+        /* Aumenta el ancho del contenedor en pantallas pequeñas */
+    }
+
+    /* Sección "¿Quiénes somos?" y "¿Qué hacemos?" */
+    .sobre-nosotros>.quienes-somos,
+    .sobre-nosotros>.que-hacemos {
+        padding: 3%;
+    }
+
+    .sobre-nosotros>.quienes-somos h3,
+    .sobre-nosotros>.que-hacemos h3 {
+        font-size: 30px;
+        /* Reduce el tamaño de los títulos */
+    }
+
+    .sobre-nosotros>.quienes-somos p,
+    .sobre-nosotros>.que-hacemos p {
+        font-size: 16px;
+        /* Reduce el tamaño del texto */
+    }
+
+    /* Imagen */
+    .cont-img {
+       
+        width:100%;
+        /* Asegura que la imagen no exceda el ancho del contenedor */
+        margin-right: 0;
+        padding: 0;
+    }
+}
+
+/* Media Queries para dispositivos más pequeños, como teléfonos móviles */
+@media screen and (max-width: 480px) {
+
+    /* Sección "¿Quiénes somos?" y "¿Qué hacemos?" */
+    .sobre-nosotros>.quienes-somos h3,
+    .sobre-nosotros>.que-hacemos h3 {
+        font-size: 30px;
+        /* Reduce aún más los tamaños en pantallas muy pequeñas */
+    }
+
+    .sobre-nosotros>.quienes-somos p,
+    .sobre-nosotros>.que-hacemos p {
+        font-size: 18px;
+    }
+
+    /* Imagen */
+    .cont-img {
+        width: 90%;
+        /* Ajusta el tamaño de la imagen al 100% del contenedor */
+        
+        
+    }
+}
+
+
+/*--------------------------------------------AQUÍ TERMINA LA 1ERA PARTE DEL MAIN-¿QUIENES SOMOS?--------------------------------------------*/
+
+
+/*--------2DA PARTE DEL MAIN- ¿COMO FUNCIONA?----------------*/
+
+
+.cont2-h1 {
+
+
+    text-align: left;
+    font-size: 350%;
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    color: #fd9d43;
+    max-width: 80%;
+
+}
+
+/*--------------------------------------------------------------------*/
+.fondo2-imagen {
+
+    background-image: url("../img/imagen-color-amanecer.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 4%;
+    border: 1px solid;
+
+}
+
+.cont-como-funciona {
+
+    display: flex;
+}
+
+.cont-alquilamos,
+.cont-alquilamos h2 {
+    padding: 25px;
+    font-size: 135%;
+
+}
+
+.cont-alquilamos,
+.cont-alquilamos p {
+    font-size: 20px;
+
+}
+
+
+
+/* MEDIA QUERY PARA DISPOSITIVOS PEQUEÑOS */
+@media (max-width: 768px) {
+    .fondo2-imagen {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .cont-como-funciona {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont-alquilamos h2 {
+        font-size: 24px;
+    }
+
+    .cont-alquilamos p {
+        font-size: 100%;
+
+    }
+
+    .cont2-h1 {
+
+        margin-bottom: 15%;
+        font-size: 45px;
+
+        padding: 3px;
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 10%;
+
+
+    }
+}
+
+/*-----------AQUÍ TERMINA LA 2DA PARTA DEL MAIN --------------*/
+
+/*----AQUÍ EMPIEZA LA 3ERA PARTE DEL MAIN----*/
+
+/*3ERA PARTE MAIN---CONTACTO*/
+
+.h1-contacto {
+
+    text-align: left;
+    font-size: 350%;
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    color: #fd9d43;
+    max-width: 80%;
+
+
+}
+
+/*-----------------------------------------*/
+
+.h3-info,
+.p-contacto {
+
+
+    text-align: left;
+    margin-left: 8%;
+
+    max-width: 80%;
+    font-size: 160%;
+    line-height: 1.6;
+
+}
+
+/*-----------------------------------------*/
+
+.cont-contacto {
+
+
+    display: flex;
+    align-items: center;
+    margin-left: 8%;
+    max-width: 80%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.cont-contacto h4 {
+    font-size: 300%;
+}
+
+.cont-contacto img {
+
+    width: 70px;
+    border-radius: 20px;
+}
+
+/*-------------barra hr-------------------------*/
+
+hr {
+
+    max-width: 60%;
+    margin: auto;
+    margin: 50px auto;
+    opacity: 0.6;
+
+}
+
+/*-----------------------------------------------------------*/
+
+@media(max-width:768px) {
+
+    .cont-contacto {
+        padding: 0;
+        margin-top: 15%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .h1-contacto {
+
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    .h3-info {
+
+
+        font-size: 29px;
+        line-height: 1.0;
+    }
+
+    .p-contacto {
+
+        margin-top: 30px;
+        line-height: 1.3;
+        
+    }
+
+
+
+    .cont-contacto h4 {
+        font-size: 280%;
+        text-align: center;
+    }
+
+
+
+    .cont-contacto img {
+
+        width: 100px;
+        
+    }
+}
+
+
+
+
+
+
+/*--------------AQUÍ TERMINA LA 3ERA PARTA DEL MAIN--CONTACTO--FIN DEL MAIN-------------------------*/
+
+
+/*-----------------------------------GALERÍA DE IMÁGENES---------------------------------*/
+
+
+.cont-galeria {
+
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+
+    margin-bottom: 1%;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
+    padding: 20px;
+
+}
+
+.cont-galeria img {
+
+    max-width: 500px;
+    max-height: 500px;
+
+}
+
+
+/*---------------------------------------------------*/
+
+.h1-galeria {
+
+    text-align: left;
+    font-size: 350%;
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    color: #fd9d43;
+    max-width: 80%;
+}
+
+
+.p-galeria {
+
+    text-align: left;
+    margin-left: 8%;
+    max-width: 80%;
+    font-size: 130%;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+
+/*--------------------------------------*/
+@media (max-width: 768px) {
+
+    .cont-galeria {
+
+        gap: 0;
+        margin-top:10%;
+    }
+
+    .cont-galeria img {
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .p-galeria {
+
+        font-size: 120%;
+        margin-top:10%;
+    }
+
+ .h1-galeria {
+
+    line-height: 1.0;
+ }
+
+
+}
+
+
+/*----------------AQUÍ EMPIEZA EL FOOTER------------*/
+
+
+.cont-foot {
+    
+    border: 1px solid ;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../img/imagen-color-amanecer.png);
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+    
+
+  
+}
+.cont-foot img {
+    max-width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.cont-foot p {
+
+    font-size: 120%;
+    font-weight: bold;
+    
+
+}
+
+.cont-foot nav,a {
+
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    font-weight: lighter;
+    font-size: 100%;
+    
+}
+
+.cont-foot i {
+
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+
+    .cont-foot {
+
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .cont-foot img {
+
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .cont-foot p {
+
+        font-size: 110%;
+    }
+
+   
+}
+
+
+
+    
+    
+   
+
+
+
+
+
+
+
+/*---------------------------*/
+
+.flecha-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+
+@media (max-width: 768px) {
+    .flecha-arriba {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 14px;
+        font-size: 18px;
+        border-radius: 10%;
+    }
+}
